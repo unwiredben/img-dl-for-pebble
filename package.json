@@ -1,0 +1,39 @@
+{
+  "name": "img-dl-for-pebble",
+  "version": "0.0.1",
+  "files": [ "dist.zip" ],
+  "main": "src/c/img-dl.c",
+  "keywords": ["pebble-package"],
+  "repository": "unwiredben/img-dl-for-pebble.git",
+  "author": "Ben Combee <combee@techwood.org>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/unwiredben/img-dl-for-pebble/issues"
+  },
+  "homepage": "https://github.com/unwiredben/img-dl-for-pebble#readme",
+  "dependencies": {
+    "pebble-events": "^1.1.0"
+  },
+  "pebble": {
+    "projectType": "package",
+    "sdkVersion": "3",
+    "enableMultiJS": true,
+    "targetPlatforms": [
+      "basalt",
+      "chalk"
+    ],
+    "messageKeys": [
+      "READY",
+      "CHUNK_SIZE",
+      "WIDTH",
+      "HEIGHT",
+      "BEGIN",
+      "DATA",
+      "END",
+      "ERROR"
+    ],
+    "resources": {
+      "media": []
+    }
+  }
+}
